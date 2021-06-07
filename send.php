@@ -11,19 +11,19 @@
 	$mail->setLanguage('ru', 'phpmailer/language/');
 	$mail->IsHTML(true);
 
-	$mail->setFrom('lopteva.99@mail.ru', 'hope');
+	$mail->setFrom('hopeqrtx@gmail.com', 'hope');
 
 	$mail->addAddress('hopeqrtx@gmail.com');
 
 	$mail->subject = 'привет';
 
 	$body = '<h1>халоу,</h1>';
-	if (trin(!empty($_POST['email']))) {
-		$body.='<p><strong>E-mail:</strong>'.$_POST['email'].'</p>';
+	if (trin(!empty($_POST['phone']))) {
+		$body.='<p><strong>phone:</strong>'.$_POST['phone'].'</p>';
 	}
 
-	if (trin(!empty($_POST['email']))) {
-		$body.='<p><strong>сообщение:</strong>'.$_POST['message'].'</p>';
+	if (trin(!empty($_POST['select']))) {
+		$body.='<p><strong>выбор:</strong>'.$_POST['select'].'</p>';
 	}
 
 	$mail->Body = $body;
