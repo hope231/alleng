@@ -869,16 +869,17 @@ body.lock {
     -webkit-transition: all 0.8s ease 0.5s;
     transition: all 0.8s ease 0.5s;
   }
-  .first-screen:after.active:after {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-    opacity: 1;
-  }
 }
 @media (max-width: 767.98px) {
   .first-screen:after {
     display: none;
   }
+}
+
+.first-screen.active:after {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .triger-screen {
