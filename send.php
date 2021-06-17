@@ -18,11 +18,11 @@
 	$mail->subject = 'привет';
 
 	$body = '<h1>халоу,</h1>';
-	if (trin(!empty($_POST['phone']))) {
+	if (trim(!empty($_POST['phone']))) {
 		$body.='<p><strong>phone:</strong>'.$_POST['phone'].'</p>';
 	}
 
-	if (trin(!empty($_POST['select']))) {
+	if (trim(!empty($_POST['select']))) {
 		$body.='<p><strong>выбор:</strong>'.$_POST['select'].'</p>';
 	}
 
