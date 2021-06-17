@@ -11,7 +11,7 @@
 	$mail->setLanguage('ru', 'phpmailer/language/');
 	$mail->IsHTML(true);
 
-	$mail->setFrom('hopeqrtx@gmail.com', 'hope');
+	$mail->setFrom('hope.go@mail.ru', 'hope');
 
 	$mail->addAddress('hopeqrtx@gmail.com');
 
